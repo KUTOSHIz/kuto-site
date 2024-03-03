@@ -6,7 +6,7 @@
 <title>Page avec voix</title>
 <style>
     body {
-        background-image: url('https://www.youtube.com/watch?v=1bpE1IpXcfs');
+        background-image: url('https://freerangestock.com/sample/140774/skull-formed-by-computer-code--cyber-crime-.jpg');
         background-size: cover;
         background-position: center;
         height: 100vh;
@@ -53,7 +53,7 @@ function lireMessage() {
     var syntheseVocale = window.speechSynthesis;
     var message = new SpeechSynthesisUtterance("Vous avez été hacké par une équipe russe bonne chance pour réparer votre pc fils de viole très content hahahahahahahahahahahahahahahahaahahahahahahahahaahahahaahahhahahahahahahahhahahahahahahahhahahahahahahahhahahahahahahah");
     message.onend = function(event) {
-        var son = new Audio('https://www.youtube.com/watch?v=1bpE1IpXcfs');
+        var son = new Audio('file:///C:/Users/FlowUp/Downloads/Red%20Alert%20Alarm%20Sound%20Effect.mp3');
         son.play();
     };
     syntheseVocale.speak(message);
