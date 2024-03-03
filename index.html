@@ -38,7 +38,7 @@
 <body>
 
 <audio autoplay loop>
-    <source src="file:///C:/Users/FlowUp/Downloads/Red%20Alert%20Alarm%20Sound%20Effect%20(1).mp3" type="audio/mpeg">
+    <source src="file:///C:/Users/FlowUp/Downloads/Red%20Alert%20Alarm%20Sound%20Effect.mp3">
     Votre navigateur ne supporte pas l'élément audio.
 </audio>
 
@@ -53,7 +53,7 @@ function lireMessage() {
     var syntheseVocale = window.speechSynthesis;
     var message = new SpeechSynthesisUtterance("Vous avez été hacké par kutoshize bonne chance pour réparer votre pc fils de viole très content hahahahahahahahahahahahahahahahaahahahahahahahahaahahahaahahhahahahahahahahhahahahahahahahhahahahahahahahhahahahahahahah");
     message.onend = function(event) {
-        var son = new Audio('file:///C:/Users/FlowUp/Downloads/Red%20Alert%20Alarm%20Sound%20Effect%20(1).mp3');
+        var son = new Audio('file:///C:/Users/FlowUp/Downloads/Red%20Alert%20Alarm%20Sound%20Effect.mp3');
         son.play();
     };
     syntheseVocale.speak(message);
