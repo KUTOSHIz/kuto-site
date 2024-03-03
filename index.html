@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Page avec voix</title>
+<style>
+    body {
+        background-image: url('https://freerangestock.com/sample/140774/skull-formed-by-computer-code--cyber-crime-.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        color: #ffffff;
+    }
+    .container {
+        text-align: center;
+        padding-top: 50px;
+    }
+    .bouton {
+        background-color: #4CAF50;
+        color: black;
+        padding: 15px 25px;
+        text-align: center;
+        font-size: 16px;
+        cursor: pointer;
+        border: none;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+    }
+    .bouton:hover {
+        background-color: #45a049;
+    }
+</style>
+</head>
+<body>
+
+<audio autoplay loop>
+    <source src="file:///C:/Users/FlowUp/Downloads/Red%20Alert%20Alarm%20Sound%20Effect%20(1).mp3" type="audio/mpeg">
+    Votre navigateur ne supporte pas l'élément audio.
+</audio>
+
+<div class="container">
+    <h1>Bienvenue sur mon site de l'enfer</h1>
+    <p>Cliquez sur le bouton ci-dessous pour ecouter la mort :</p>
+    <button class="bouton" onclick="lireMessage()">Scanner le pc</button>
+</div>
+
+<script>
+function lireMessage() {
+    var syntheseVocale = window.speechSynthesis;
+    var message = new SpeechSynthesisUtterance("Vous avez été hacké par kutoshize bonne chance pour réparer votre pc fils de viole très content hahahahahahahahahahahahahahahahaahahahahahahahahaahahahaahahhahahahahahahahhahahahahahahahhahahahahahahahhahahahahahahah");
+    message.onend = function(event) {
+        var son = new Audio('file:///C:/Users/FlowUp/Downloads/Red%20Alert%20Alarm%20Sound%20Effect%20(1).mp3');
+        son.play();
+    };
+    syntheseVocale.speak(message);
+}
+</script>
+
+</body>
+</html>
