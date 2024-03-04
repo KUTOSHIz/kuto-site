@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+e<!DOCTYPE html>
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
@@ -39,7 +39,7 @@
 <body>
     
 <audio autoplay loop>
-    <source src="https://youtu.be/nXW_kGS4g9w?si=PoyP-tQI6DRjRqgo">
+    <source src="file:///C:/Users/FlowUp/Downloads/SCPSL%20Alpha%20Warhead%20Detonation.mp3">
     Votre navigateur ne supporte pas l'élément audio.
 </audio>
 
@@ -54,7 +54,7 @@ function lireMessage() {
     var syntheseVocale = window.speechSynthesis;
     var message = new SpeechSynthesisUtterance("Vous avez été hacké par une équipe russe bonne chance pour réparer votre pc fils de viole très content hahahahahahahahahahahahahahahahaahahahahahahahahaahahahaahahhahahahahahahahhahahahahahahahhahahahahahahahhahahahahahahah");
     message.onend = function(event) {
-        var son = new Audio('https://youtu.be/nXW_kGS4g9w?si=PoyP-tQI6DRjRqgo');
+        var son = new Audio('file:///C:/Users/FlowUp/Downloads/SCPSL%20Alpha%20Warhead%20Detonation.mp3');
         son.play();
     };
     syntheseVocale.speak(message);
